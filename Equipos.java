@@ -53,8 +53,6 @@ equipos.writeUTF(cuidad);
 equipos.writeDouble(capacidad);
 //Cantidad de jugadores
 equipos.writeInt(0);
-//existe 
-equipos.writeBoolean(true);
     }
     
 public boolean borrarEquipo(int code) throws IOException{
@@ -74,7 +72,7 @@ equipos.writeDouble(0);
 //Cantidad de jugadores
 equipos.writeInt(0);
 //equipos
-equipos.writeBoolean(false);
+
 
 return true; 
 }else{
@@ -82,7 +80,7 @@ equipos.readUTF();
 equipos.readUTF();
 equipos.readDouble();
 equipos.readInt();
-equipos.readBoolean();
+
 }
 
  }
@@ -101,7 +99,6 @@ equipos.readUTF();
 equipos.readUTF();
 equipos.readDouble();
 equipos.readInt();  
-equipos.readBoolean();
      }
     }
     return false;
